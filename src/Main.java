@@ -1,15 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        int check =100;
-        int pay = 1400;
-        int bon = 0;
-        int fin;
+        int check = 100;
+        int replenishment = 1200;
+        int bonus_for_rep = 0;
+        int total;
 
 
-        if (pay > 1000) {
-            bon = (pay / 100) * 1;
-            fin = bon + pay+ check;
+        if (replenishment > 1000) {
+            bonus_for_rep = (replenishment / 100) * 1;
+            total = bonus_for_rep + replenishment + check;
         }
-        System.out.println(bon+pay+check);
+        System.out.println("Бонусов начислено:");
+        System.out.println(bonus_for_rep);
+        System.out.println("Сумма на счете:");
+        System.out.println(bonus_for_rep + replenishment + check);
+
     }
 }
